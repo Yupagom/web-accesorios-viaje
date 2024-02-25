@@ -68,12 +68,17 @@ header {
 }
 
 .img-productos {
-    width: calc(25% - 20px); /* Ajusta el ancho de cada imagen */
-    margin: 10px; /* Ajusta el margen entre las imágenes */
+    width: calc(25% - 20px); 
+    margin: 10px; 
     padding: 20px;
-    box-sizing: border-box; /* Asegura que el ancho incluya el margen */
+    box-sizing: border-box; 
     background-color: #defabb;
     border-radius: 10px;
+}
+
+.img-productos:hover{
+    background-color: #ef0078;
+
 }
 
 .img-productos img{
