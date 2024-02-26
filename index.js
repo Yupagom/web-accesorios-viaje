@@ -1,6 +1,5 @@
 function cambiarImagen(producto){
     var productoSeleccionado = document.querySelector("#producto-"+producto);
-    debugger;
     if(productoSeleccionado.hasAttribute("seleccionado")){
         document.querySelector("#producto-"+producto+"-1").style="";
         document.querySelector("#producto-"+producto+"-2").style="display:none";
@@ -11,4 +10,9 @@ function cambiarImagen(producto){
         productoSeleccionado.setAttribute("seleccionado","");
     }
 
+}
+
+function desplazarPagina(id){
+    var destino = document.getElementById(id);
+    destino.scrollIntoView({ behavior: 'smooth' });
 }

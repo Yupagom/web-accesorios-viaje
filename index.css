@@ -87,6 +87,30 @@ header {
     border-radius: 10px;
 }
 
+.seccion{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.mitad-seccion{
+    color: #008b00;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.banda-servicios{
+    background-color: #41c300;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+li{
+    list-style-type: none;
+}
+
 
 footer{
     background-color: #008b00;

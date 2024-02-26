@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Tienda de Accesorios de Viaje</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- https://github.com/Yupagom/web-accesorios-viaje/tree/Yuly -->
     <div class="franja-decoracion"></div>
     <header>
@@ -16,8 +18,8 @@
                 </div>
                 <ul class="menu">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#" onclick="desplazarPagina('ACERCADE')">Acerca de</a></li>
+                    <li><a href="#" onclick="desplazarPagina('SERVICIOS')">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
@@ -41,7 +43,7 @@
                 <img id="producto-1-2" src="producto-1-2.webp" style="display: none;">
             </div>
             <div id="producto-2" class="img-productos" onclick="cambiarImagen(2)">
-                <img id="producto-2-1"  src="producto-2-1.webp" alt="">
+                <img id="producto-2-1" src="producto-2-1.webp" alt="">
                 <img id="producto-2-2" src="producto-2-2.webp" style="display: none;">
             </div>
             <div id="producto-3" class="img-productos" onclick="cambiarImagen(3)">
@@ -59,7 +61,33 @@
 
 
 
-    <div class=""></div>
+    <div id="ACERCADE" class="seccion">
+        <div class="mitad-seccion">
+            <img src="https://i.pinimg.com/736x/73/a2/b3/73a2b3b4cd310e596ee7bfb2d944031e.jpg" height="480">
+        </div>
+        <div class="mitad-seccion">
+            <h2>Acerca de Nosotros</h2>
+            <p>Deja que nosotros nos encarguemos de tus viajes, somos un grupo especializado en organizar tus maletas de
+                viajes de acuerdo al destino escogido, contamos con un excelente servicio y nada quedara fuera de tu
+                equipaje, lo mejor es que tampoco llevaras útiles innecesarios.</p>
+        </div>
+    </div>
+
+    <div id="SERVICIOS" class="banda-productos">
+        <h2>SERVICIOS</h2>
+        <ul>
+            <li> 1. Destinos</li>
+            <li> 2. Climas</li>
+            <li> 3. Vestuario</li>
+            <li> 4. Calzado</li>
+            <li> 5. Accesorios</li>
+            <li> 6. Transportes</li>
+            <li> 7. Idiomas</li>
+            <li> 8. Asesoria personal</li>
+            <li> 9. Acompañmiento</li>
+        </ul>
+
+    </div>
 
 
 
@@ -67,5 +95,6 @@
         <h6>© Todos los derechos Reservados por Yuly Gomez 2024</h6>
     </footer>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
